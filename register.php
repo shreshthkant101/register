@@ -25,7 +25,7 @@ $password = $_POST['password'];
 $repass = $_POST['repassword'];
 $email = $_POST['email'];
 $date = date("Y-m-d");
-$sql_insert = "INSERT INTO `users` (username, password, email, date) VALUES (`$username`, `$password`, `$email`, $date)";
+$sql_insert = "INSERT INTO `users` (`username`, `password`, `email`, `date`) VALUES (`$username`, `$password`, `$email`, `$date`)";
 
 if(isset($_POST['submit'])){
 if($username && $password && $repass && $email){
